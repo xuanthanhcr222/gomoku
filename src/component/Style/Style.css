@@ -1,0 +1,118 @@
+body {
+    font: 14px "Arial", Futura, sans-serif;
+    margin: 20px;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+/* Square Style */
+.square {
+	background: rgb(255, 255, 255);
+	border: 1px solid rgb(0, 0, 0);
+	float: left;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 44px;
+	height: 44px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 44px;
+}
+
+.square:hover {
+	background-color: rgb(163, 163, 163);
+}
+
+.square.current-position {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+.square.winner {
+	color: rgb(128, 128, 128);
+}
+
+.square:focus {
+	outline: none;
+}
+
+/* Game Style */
+.game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.game-setup {
+	display: flex;
+	justify-content: left;
+}
+
+.game-board-size {
+	font-size: 24px;
+	margin-right: 20px;
+}
+.game-board-size-input {
+	height: 24px;
+	width: 200px;
+	font-size: 24px;
+}
+.game-start-btn {
+	background-color: rgb(255, 255, 255);
+	width: 100px;
+	height: 30px;
+}
+
+.game-play-area {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 30px;
+}
+.game-board {
+
+}
+.game-move {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.game-sort {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.status {
+	margin-left: 15px;
+	font-size: 25px;
+}
+.move-history {
+	margin-bottom: 10px;
+	margin-top: 15px;
+	color: rgb(0, 0, 0);
+	display: flex;
+	flex-direction: column;
+}
+
+.move-current {
+	font-weight: 600;
+}
+.move {
+	width: max-content;
+	height: 30px;
+}
+
+.sort-btn {
+	display: flex;
+	align-items: center;
+	width: 75px;
+	height: 30px;
+	font-size: 20px;
+}
+
+/* Board Style */
+.board-row:after {
+	clear: both;
+	display: table;
+}
